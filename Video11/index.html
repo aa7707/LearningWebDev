@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Entities and Code tags</title>
+</head>
+<body>
+    In this page, we are going to learn about Entities and Code tags in html.
+    <dl>
+        <dt>Entities tag</dt>
+        <dd>It enables you to display characters that are reserved in html or are not readily available on keyboard. These are used to represent Special Characters in a format that the browser can understand. They start with ampersand(&) and end with semicolon(;). Examples of html entities are:-
+            <pre>
+            &amp;lt; for &lt;
+            &amp;gt; for &gt;
+            &amp;amp; for &amp;
+            &amp;nbsp; for non-breaking space
+            &amp;copy; for &copy;
+        </pre></dd>
+        <dt>Pre tag</dt>
+        <dd>This tag shows whatever you write inside, as it is as written inside it. For example,
+        <pre>if i leave few space after this sentence                        and continue writing,
+
+
+
+
+                    wherever, it will display as it is.
+        </pre></dd>
+        <dt>Quotation tags</dt>
+        <dd>This tag is used to quote something from an article, and search engines understands the context of the text. It is common in textual content. There are 2 quotation tags, blockquote, for writing in a block and writing a lot, and q tag, for writing inline and less. Basic syntax:-
+            <pre>Blockquote - 
+                &lt;blockquote cite = "source-url"&gt;
+                    Quoatation tag here
+                &lt;/blockquote&gt;
+Q tag - 
+                &lt;q cite = "source-url"&gt;Quoatation tag here&lt;/blockquote&gt;
+            </pre>
+        </dd>
+        <dt>Code tags</dt>
+        <dd>This tag is used to to write and show code.
+            Basic Syntax:-
+            <pre>
+    .
+    .
+    .
+    .
+    .
+&lt;code&gt;
+                <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;How to link music in HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;audio src="music-source-url" controls&gt;&lt;/audio&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;/code&gt;
+    .
+    .
+    .
+    .
+    .
+            </pre>
+        </dd>
+    </dl>
+
+    Few examples of above entities:-
+    <p>Usually while writing p tag, not for writing a paragraph but to show it in a sentence like this, it would not be possible as its format will collide with the html syntax. But we can still do that by writing it like this:- &amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;.
+        This will result in - &lt;p&gt;&lt;/p&gt;.<br>
+    Similarly, if we have to give n number of spaces between two things like &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this, we have to use &amp;nbsp; entity. <br>
+        And if we have to use copyright's symbol which is not accessible through keyboard, we can use that like this - &amp;copy;. This will give us - &copy;
+    </p>
+</body>
+</html>

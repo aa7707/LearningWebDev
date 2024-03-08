@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal, External and Inline CSS</title>
+    <style>
+        pre{
+           background-color: black;
+           color: white; 
+        }
+    </style>
+</head>
+<body>
+    <H1>Ways of styling using CSS</H1>
+    
+    <dt style="font-weight: bold;">Inline CSS</dt>
+    <dd>Inline CSS is a way of adding styling to an element of an HTML page and is limited to that element only. Like the bold property given above in "Inline CSS".
+<pre>
+<code>
+&lt;dt style="font-weight: bold;">Inline CSS&lt;/dt>
+</code>
+</pre>
+    </dd>
+    
+    <dt style="font-weight: bold;">Internal CSS</dt>
+    <dd>Used under head tag. Selector,i.e. element, once defined, need not to be defined for its multiple occurences. Whatever times an element comes in an html file, the style is applied to it that many times. This should be used only when the project is small. Basic Syntax:-
+        <pre>
+&lt;style&gt;
+    element{
+        property1: value;
+        property2: value;
+        .
+        .
+        .
+    }
+&lt;/style&gt;
+        </pre>
+        
+Example:-
+Like in this page, we have added black background color on the syntax above and example below, which is written under pre tag. That is executed as follows:-
+        <pre>
+&lt;style&gt;
+    pre{
+       background-color: black;
+       color: white; 
+    }
+&lt;/style&gt;
+        </pre></dd>
+    
+    <dt style="font-weight: bold;">External CSS</dt>
+    <dd>In this, you create a css file in the same folder in which your html file is present. Add the styles you want, then link this css file to your html file using link element, inside head of HTML. It is considered a good practise to use this when there's a big project. Syntax to link CSS:-
+        <pre>
+<code>
+&lt;link rel="stylesheet" href="style.css"&gt;
+</code>
+</pre></dd>
+</body>
+</html>

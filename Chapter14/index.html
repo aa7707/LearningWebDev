@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors - Masterclass</title>
+    <style>
+        pre{
+            background-color: black;
+            color: white;
+        }
+        dt{
+            font-weight: bold;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    Selectors is an alias of element tags used inside HTML. Using these selectors, one can add styling to the webpage. There are different types of selectors such as:-
+    <dl>
+        <dt>Element Selectors</dt>
+        <dd>Used for styling using Elements of HTML. Syntax:-
+            <pre>
+elementName{
+    property: value;
+    .
+    .
+}
+            </pre>
+            Example:-
+            <pre>
+body{
+    background-color: black;
+    color: white;
+}
+            </pre>
+        </dd>
+        <dt>Class Selectors</dt>
+        <dd>Used for styling using Class name. It is used in situations where there are multiple elements, that can be different, that may require similar property or styling. These elements may have been grouped together in html file using class. Syntax:-
+            <pre>
+.className{
+    property: value;
+    .
+    .
+}
+            </pre>
+Example:-
+            <pre>
+.redBG{
+    background-color: red;
+    color: black;
+}
+            </pre>
+        </dd>
+        <dt>ID Selectors</dt>
+        <dd>Used for styling using ID name. It is used in situations where there are multiple elements, that can be same, that may require different property or styling. These elements require to be seen distinctively in html file. Syntax:-
+            <pre>
+#elementID{
+    property: value;
+    .
+    .
+}
+            </pre>
+            Example:-
+            <pre>
+#redBG{
+    background-color: red;
+    color: black;
+}
+            </pre>
+        </dd>
+        <dt>Child Selectors</dt>
+        <dd>Used for styling an element, which is already inside other element. Element to be styled should be direct child of the parent element. Syntax:-
+            <pre>
+ParentElement > ChildElement{
+    property: value;
+    .
+    .
+}
+            </pre>
+            Example:-
+            <pre>
+div > p{
+    background-color: red;
+    color: black;
+}
+            </pre>
+        </dd>
+        <dt>Descendent Selectors</dt>
+        <dd>Used for styling an element, which is already inside other element. Element to be styled may not be direct child of the parent element. Syntax:-
+            <pre>
+ParentElement DescendentElement{
+    property: value;
+    .
+    .
+}
+            </pre>
+            Example:-
+            <pre>
+div p{
+    background-color: red;
+    color: black;
+}
+            </pre>
+        </dd>
+        <dt>Universal Selectors</dt>
+        <dd>Used for styling all elements of an html file. Syntax:-
+<pre>
+*{
+    property: value;
+    .
+    .
+}
+            </pre>
+            Example:-
+            <pre>
+*{
+    margin: 10;
+    padding: 40;
+}
+            </pre>
+        </dd>
+        <dt>Pseudo Selectors</dt>
+        <dd>Used to style elements based on a particular state or user interaction. Syntax:-
+            <pre>
+Element:Interaction{
+    property: value;
+    .
+    .
+}
+            </pre>
+            Example:-
+            <pre>
+a:hover{
+    background-color: red;
+}
+a:link{
+    color: black;
+}
+a:active{
+    color: blue;
+}
+            </pre>
+        </dd>
+    </dl>
+</body>
+</html>

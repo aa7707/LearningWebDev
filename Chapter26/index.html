@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+        .box::first-line{
+            color: red;
+        }
+        .boxes *{
+            border: 2px solid black;
+        }
+        p,a,.boxes [data-color="primary"]{
+            margin-top: 45px;
+        }
+        .box:nth-child(even){
+            background-color: blue;
+        }
+        .boxes::before{
+            content: "HELLO";
+        }
+        .boxes::after{
+            background-color: pink;
+        }
+        ::selection{
+            background-color: black;
+            color: aqua;
+        }
+        .box::first-letter{
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem iusto cumque quibusdam hic architecto sequi ullam voluptate obcaecati! Cumque totam laudantium quis officiis minus assumenda perferendis quae fuga impedit deleniti fugit temporibus ad adipisci, accusantium pariatur, debitis, necessitatibus velit exercitationem laboriosam? Quam quidem, voluptatem modi ea vero dolorum dolor explicabo nesciunt hic asperiores debitis exercitationem eos perspiciatis at magnam nulla. Neque at cumque doloremque in consectetur illum commodi laborum fuga assumenda! Numquam, consectetur! Dolorum deleniti officiis recusandae natus perferendis architecto corrupti voluptatem iste dicta quasi, reprehenderit sunt corporis quo quisquam a velit vel quibusdam voluptas dolor ipsum sint nam deserunt.</div>
+        <div data-color="primary" class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Styling Lists</title>
+    <style>
+        .posin {
+            list-style-position: inside;
+            background-color: blue;
+        }
+        .posout {
+            list-style-position: outside;
+            background-color: blue;
+        }
+        .dis {
+            list-style-type: "😒";
+            background-color: blue;
+        }
+        .img {
+            list-style-image: url("https://i.imgur.com/lfx13EX.jpeg");
+            background-color: blue;
+        }
+        .lile {
+            list-style: circle inside;
+            background-color: blue;
+        }
+        pre {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS - Styling Lists</h2>
+    <p>
+        Whenever we create a navigation bar(which we will see later), most of the time we create the nav bar elements as list items under unordered list. We can beautify those too using some properties that we will discuss now:- <br>
+        
+        <dt>list-style-position</dt>
+        <dd>This is used to describe the position of your element markers, whether you want it to be inside the nav bar or not. We will undertsand this with an example:- <br>
+        For Inside-<br>
+        <pre>
+        &lt;style&gt;
+            nav ul li{
+                list-style-position: inside;
+                background-color: blue;
+            }
+        &lt;/style&gt;
+        &lt;body&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Home&lt;/li&gt;
+                    &lt;li&gt;About&lt;/li&gt;
+                    &lt;li&gt;Contact&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        &lt;/body&gt;
+        </pre>
+        <br>
+        Output:-
+        <br>
+        <nav>
+            <ul>
+                <li class="posin">Home</li>
+                <li class="posin">About</li>
+                <li class="posin">Contact</li>
+            </ul>
+        </nav>
+        <br>
+        For Outside:-
+        <pre>
+            &lt;style&gt;
+            nav ul li{
+                list-style-position: outside;
+                background-color: blue;
+                }
+            &lt;/style&gt;
+            &lt;body&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Home&lt;/li&gt;
+                    &lt;li&gt;About&lt;/li&gt;
+                    &lt;li&gt;Contact&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+            &lt;/body&gt;
+            </pre>
+            <br>
+        Output:-
+        <br>
+        <nav>
+            <ul>
+                <li class="posout">Home</li>
+                <li class="posout">About</li>
+                <li class="posout">Contact</li>
+            </ul>
+        </nav>
+        <br>
+        </dd>
+        
+        <dt>list-style-type</dt>
+        <dd>This is used to give the list items(nav elements) any specific type of markers like - roman capitals, roman smalls, disc, square, circle and many more. For example:-
+        <pre>
+        &lt;style&gt;
+            nav ul li{
+                list-style-type: "😒";
+                background-color: blue;
+            }
+        &lt;/style&gt;
+        &lt;body&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Home&lt;/li&gt;
+                    &lt;li&gt;About&lt;/li&gt;
+                    &lt;li&gt;Contact&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        </pre>
+        Output:-
+        <br>
+        <nav>
+            <ul>
+                <li class="dis">Home</li>
+                <li class="dis">About</li>
+                <li class="dis">Contact</li>
+            </ul>
+        </nav>
+        </dd>
+        <br>
+        
+        <dt>list-style-image</dt>
+        <dd>This is used to give the list items(nav elements) any kind of image that would be diplayed as markers using the image url.
+        <pre>
+        &lt;style&gt;
+            nav ul li{
+                list-style-image: url("https://i.imgur.com/lfx13EX.jpeg");
+                background-color: blue;
+            }
+        &lt;/style&gt;
+        &lt;body&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Home&lt;/li&gt;
+                    &lt;li&gt;About&lt;/li&gt;
+                    &lt;li&gt;Contact&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        </pre>
+        Output:-
+        <br>
+        <nav>
+            <ul>
+                <li class="img">Home</li>
+                <li class="img">About</li>
+                <li class="img">Contact</li>
+            </ul>
+        </nav>
+        </dd>
+        <br>
+
+        <dt>list-style</dt>
+        <dd>This serves as the combination of list-style-image, or list-style-type with list-style-position as one. Example is shown below:-
+        <pre>
+            &lt;style&gt;
+            nav ul li{
+                list-style: circle inside;
+                background-color: blue;
+            }
+        &lt;/style&gt;
+        &lt;body&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Home&lt;/li&gt;
+                    &lt;li&gt;About&lt;/li&gt;
+                    &lt;li&gt;Contact&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        </pre>
+        Output:-
+        <br>
+        <nav>
+            <ul>
+                <li class="lile">Home</li>
+                <li class="lile">About</li>
+                <li class="lile">Contact</li>
+            </ul>
+        </nav>
+        </dd>
+        <br>
+    </p>
+    
+</body>
+</html>

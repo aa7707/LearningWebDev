@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outlines</title>
+    <style>
+        pre{
+            background-color: black;
+            color: white;
+        }
+        .box {
+            border: 5px solid black;
+            padding: 30px;
+            box-shadow: -8px 11px 3px 5px red;
+        }
+
+        .ptext1 {
+            text-shadow: 7px 7px 9px blueviolet;
+        }
+        .ptext2 {
+            outline: 2px dotted red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Shadows and Outlines</h2>
+    Now, we are going to learn about the shadow and the outline property in the CSS. These, as the name suggests, provide shadow and outlines for which they are applied.
+    <h3>Shadow</h3>
+    Shadows can be applied to anything in the web page from texts to boxes to scrolls etc. You just need to define the shadow property to any of them and it will be applied. Here is the syntax and example for both of that. <br>
+    Syntax:- <br>
+    <pre>
+.classname {
+    material-shadow: h-offset v-offset blur spread color;
+}
+</pre><br>
+    material: here means either box, text or scrolls <br>
+    h-offset: horizontal offset<br>
+    v-offset: vertical offset<br>
+    blur: larger the number, the blurier is the shadow<br>
+    spread: area coverage around the material<br>
+    color: any color of your choice<br>
+<br>
+    Example:-<br>
+    <pre>
+&lt;style&gt;
+    .box {
+            border: 5px solid black;
+            padding: 30px;
+            box-shadow: -8px 11px 3px 5px red;
+        }
+    .ptext1 {
+            text-shadow: 7px 7px 9px blueviolet;
+        }    
+&lt;/style&gt;
+&lt;body&gt;
+{
+    &lt;div class="box"&gt;
+        this is a box
+    &lt;/div&gt;
+    &lt;p class="ptext1"&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, cupiditate recusandae dolore
+        quae assumenda commodi aliquam, mollitia harum quidem, sed suscipit adipisci earum est itaque! Tempora
+        reiciendis magnam natus atque quidem vitae, reprehenderit ab itaque quis? Nobis animi neque adipisci!&lt;/p&gt;
+}
+&lt;/body&gt;
+</pre>
+<br>
+    Output:-
+    <div class="box">
+        this is a box
+    </div>
+    <p class="ptext1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, cupiditate recusandae dolore
+    quae assumenda commodi aliquam, mollitia harum quidem, sed suscipit adipisci earum est itaque! Tempora
+    reiciendis magnam natus atque quidem vitae, reprehenderit ab itaque quis? Nobis animi neque adipisci!</p>
+
+
+<h3>Outlines</h3>
+Outlines are the definers of any space taken by the content including margin, borders, padding etc. It is applied over the border. It seems to be like a border, but isn't. It follows the border properties to specify it's content space. It is commonly used for highlighting focused elements. <br>
+Syntax:- 
+<pre>
+.classname {
+    outline: width style color;
+}
+</pre>
+width: width of the outline <br>
+style: dotted, solid or dashed style <br>
+color: sets the outline color <br>
+<br>
+Example:- 
+<pre>
+<code>
+&lt;style&gt;
+    .ptext2 {
+            outline: 2px dotted red;
+        }
+&lt;/style&gt;
+&lt;body&gt;
+    &lt;p class="ptext2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, cupiditate recusandae dolore
+        quae assumenda commodi aliquam, mollitia harum quidem, sed suscipit adipisci earum est itaque! Tempora
+        reiciendis magnam natus atque quidem vitae, reprehenderit ab itaque quis? Nobis animi neque adipisci!&lt;/p&gt;
+&lt;/body&gt;
+</code>
+</pre>
+    Output:-
+    <p class="ptext2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, cupiditate recusandae dolore
+    quae assumenda commodi aliquam, mollitia harum quidem, sed suscipit adipisci earum est itaque! Tempora
+    reiciendis magnam natus atque quidem vitae, reprehenderit ab itaque quis? Nobis animi neque adipisci!</p>
+</body>
+
+</html>

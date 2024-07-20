@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Variables</title>
+    <style>
+        
+        :root{
+            --color: rgb(65, 106, 195);
+            --seccolor: rgb(91, 44, 210);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+        ul li{
+            list-style: none;
+            padding: 34px;
+        }
+        ul{
+            display: flex;
+        }
+        ul li:first-child{
+            --color: rgb(0, 74, 0);
+            background-color: var(--color);
+        }
+        pre
+        {
+            background-color: black;
+            color: white;
+            margin-right: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Variables</h2>
+    While we use CSS for styling our webpages, we might encounter situations when we repeatedly use same style on different elements or sometimes same elements multiple times. It is such a tidious process to do same thing over and over again. This is where Variables come-in. Variables just like any other programming language, are the developer defined keywords that are assigned to do a specific styling. These are also of 2 types such as global and local. Both Variable's declaration are shown below:- <br>
+    Global:
+    <pre>
+        :root{
+            --variablename: stylingproperty;
+        }
+    </pre>
+    Local:
+    <pre>
+        .classname{
+            styling: value;
+            --variablename: stylingproperty;
+        }
+    </pre>
+    Note: ":root" is used to assign global variable(s). "--"represents variable.
+
+    Let's see with an example how this works: <br>
+    <pre>
+    &lt;style&gt;
+        :root{
+            --color: rgb(65, 106, 195);
+            --seccolor: rgb(91, 44, 210);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+        ul li{
+            list-style: none;
+            padding: 34px;
+        }
+        ul{
+            display: flex;
+        }
+        ul li:first-child{
+            --color: rgb(0, 74, 0);
+            background-color: var(--color);
+        }
+    &lt;/style&gt;
+
+&lt;body&gt;
+    &lt;div class="nav"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Home&lt;/li&gt;
+            &lt;li&gt;Career&lt;/li&gt;
+            &lt;li&gt;Contact&lt;/li&gt;
+            &lt;li&gt;About&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+
+    &lt;div class="container"&gt;
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste 
+        perspiciatis sapiente consectetur quidem totam officia amet et 
+        velitquam? Perferendis nobis aut soluta dolores magnam eum 
+        dolor, quia et odio labore veritatis ratione cupiditate 
+        corrupti reiciendisoptio laboriosam explicabo culpa obcaecati 
+        dolorum esse, recusandae inventore!
+    &lt;/div&gt;
+&lt;/body&gt;
+    </pre>
+
+
+
+
+
+
+
+
+    Output:-
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Career</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste perspiciatis sapiente consectetur quidem totam officia amet et velit quam? Perferendis nobis aut soluta dolores magnam eum dolor, quia et odio labore veritatis ratione cupiditate corrupti reiciendis optio laboriosam explicabo culpa obcaecati dolorum esse, recusandae inventore!
+    </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Overflow</title>
+    <style>
+        .boxauto {
+            width: 30vw;
+            height: 30vh;
+            border: 2px solid black;
+            overflow: auto;
+        }
+
+        .boxhidden {
+            width: 30vw;
+            height: 30vh;
+            border: 2px solid black;
+            overflow: hidden;
+        }
+
+        .boxscroll {
+            width: 30vw;
+            height: 30vh;
+            border: 2px solid black;
+            overflow: scroll;
+        }
+
+        .boxvisible {
+            width: 30vw;
+            height: 30vh;
+            border: 2px solid black;
+            overflow: visible;
+        }
+
+        pre {
+            margin-left: 80px;
+            width: 30vw;
+            border: 3px solid black;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Overflow in CSS</h2>
+    <p>
+        We have encountered many times in our lives like if there is a box of certain height and width, we tend to write
+        any content in this limit only. But on website, let's suppose you want to write a blog post for instance, but
+        you don't know how much you gonna write. Therefore defining a box of certain height will cause the text to
+        overflow or come out of the defined box. Here comes Overflow property of the CSS to the recue. This property can
+        be used to any predefined box where you want to write your blog content, to not overflow the words rather hide
+        it within the box(if the content is more than the box area) and will provide you scroller option to see rest of
+        the content. <br>
+        There are multiple options that come along with overflow property which we will see here.
+    <ol>
+        <li>
+            <dt>Auto</dt>
+            <dd>Auto analyses the length of the content and decides whether to give the scroller or not. <br>
+                Example for less than the predefined area:- <br>
+                <p class="boxauto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, aspernatur!
+                </p>
+                <br>
+                Example for more than the predefined area:- <br>
+                <p class="boxauto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ad iste,
+                    temporibus sint animi natus quae dolore, quo accusantium officia aliquid neque quia. Tenetur autem
+                    accusamus culpa? Quidem, nobis, quis eos fuga hic amet commodi exercitationem ipsam iure quas
+                    dignissimos explicabo voluptas maxime rerum excepturi saepe porro distinctio, natus magni corrupti?
+                    Labore amet, consectetur quam molestias quia ex incidunt reiciendis! Aperiam eos alias quibusdam
+                    possimus totam adipisci! Quod et dicta deleniti, quas eligendi rem obcaecati officiis culpa, amet
+                    magnam voluptates repudiandae consectetur rerum possimus id eveniet sit illum ex incidunt, officia
+                    suscipit iusto. Temporibus maxime nobis ducimus consequuntur neque ipsum?</p>
+                <br>
+            </dd>
+        </li>
+        <li>
+            <dt>Hidden</dt>
+            <dd>Content is clipped and no scrolling mechanism should be provided to view the content outside the
+                clipping region.<br>
+                Example for more than the predefined area:- <br>
+                <p class="boxhidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ad iste,
+                    temporibus sint animi natus quae dolore, quo accusantium officia aliquid neque quia. Tenetur autem
+                    accusamus culpa? Quidem, nobis, quis eos fuga hic amet commodi exercitationem ipsam iure quas
+                    dignissimos explicabo voluptas maxime rerum excepturi saepe porro distinctio, natus magni corrupti?
+                    Labore amet, consectetur quam molestias quia ex incidunt reiciendis! Aperiam eos alias quibusdam
+                    possimus totam adipisci! Quod et dicta deleniti, quas eligendi rem obcaecati officiis culpa, amet
+                    magnam voluptates repudiandae consectetur rerum possimus id eveniet sit illum ex incidunt, officia
+                    suscipit iusto. Temporibus maxime nobis ducimus consequuntur neque ipsum?</p>
+                <br>
+            </dd>
+        </li>
+        <li>
+            <dt>Scroll</dt>
+            <dd>Content is clipped and if the user agent uses a scrolling mechanism that is visible on the screen (such
+                as a scroll bar or a panner), whether or not any of its content is clipped.<br>
+                Example for less than the predefined area:- <br>
+                <p class="boxscroll">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, aspernatur!
+                </p>
+                <br>
+                Example for more than the predefined area:- <br>
+                <p class="boxscroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ad iste,
+                    temporibus sint animi natus quae dolore, quo accusantium officia aliquid neque quia. Tenetur autem
+                    accusamus culpa? Quidem, nobis, quis eos fuga hic amet commodi exercitationem ipsam iure quas
+                    dignissimos explicabo voluptas maxime rerum excepturi saepe porro distinctio, natus magni corrupti?
+                    Labore amet, consectetur quam molestias quia ex incidunt reiciendis! Aperiam eos alias quibusdam
+                    possimus totam adipisci! Quod et dicta deleniti, quas eligendi rem obcaecati officiis culpa, amet
+                    magnam voluptates repudiandae consectetur rerum possimus id eveniet sit illum ex incidunt, officia
+                    suscipit iusto. Temporibus maxime nobis ducimus consequuntur neque ipsum?</p>
+                <br>
+            </dd>
+        </li>
+        <li>
+            <dt>Visible</dt>
+            <dd>Content is not clipped, i.e., it may be rendered outside the content box.<br>
+                Example for more than the predefined area:- <br>
+                <p class="boxvisible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ad iste,
+                    temporibus sint animi natus quae dolore, quo accusantium officia aliquid neque quia. Tenetur autem
+                    accusamus culpa? Quidem, nobis, quis eos fuga hic amet commodi exercitationem ipsam iure quas
+                    dignissimos explicabo voluptas maxime rerum excepturi saepe porro distinctio, natus magni corrupti?
+                    Labore amet, consectetur quam molestias quia ex incidunt reiciendis! Aperiam eos alias quibusdam
+                    possimus totam adipisci! Quod et dicta deleniti, quas eligendi rem obcaecati officiis culpa, amet
+                    magnam voluptates repudiandae consectetur rerum possimus id eveniet sit illum ex incidunt, officia
+                    suscipit iusto. Temporibus maxime nobis ducimus consequuntur neque ipsum?</p>
+                <br>
+            </dd>
+        </li>
+    </ol>
+    <br>
+    <br>
+    Syntax for overflow:- <br>
+    <pre>
+<code class="code">
+&lt;style&gt;
+    .bovOverflow {
+        border: 2px solid black;
+        overflow: auto;
+    }
+&lt;/style&gt;
+</code>
+    </pre>
+    </p>
+</body>
+
+</html>

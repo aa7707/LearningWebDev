@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Media Querries</title>
+    <style>
+        div{
+            background-color: red;
+        }
+        pre{
+            background-color: black;
+            color: white;
+        }
+
+        @media (max-width:455px) {
+            div{
+                background-color: blue;
+            }
+        }
+        @media (max-width:200px){
+            div{
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS - Media Querry</h2>
+    Media querries are the styling property that applies to various devices depending on the device type selected along with it. Various device types that come along with it are - screen(for every device that has screen) and speech for devices that has speech only. Styling that is applied under this applies on all devices with given hardware. For example, if you want to change background of the div tag in the website depending on the size of the screen from red to blue, you can do it using this. It will look something like this:- 
+    <br><br>
+    Code:-
+    <pre>
+        <code>
+    &lt;style&gt;
+        div{
+            background-color: red;
+        }
+        
+        @media (max-width:455px) {
+            div{
+                background-color: blue;
+            }
+        }
+        @media (max-width:200px){
+            div{
+                background-color: yellow;
+            }
+        }
+    &lt;/style&gt;
+        </code>
+    </pre>
+    Output:-
+    <div>
+        I am a div tag with red background. I will change to blue when the screen size will be less than 455px.
+    </div>
+</body>
+</html>

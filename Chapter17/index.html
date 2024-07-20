@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        html{
+            font-size: 18px;
+        }
+        p,dl{
+            min-width: 80vw;
+            min-height: 80%;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>CSS Sizing Units</h2>
+    <p>
+        There are various sizing units provided in CSS such as px,rem,em,vh,vw,% and more. These sizing units helps in better styling of page content. Let's understand them one by one.
+        <dl style="border: 2px solid black;font-size: 16px; ">
+            <dt>PX-</dt>
+            <dd>PX is the abbreviated form of pixel. It is 196th of an inch. It is widely used unit.</dd>
+            <dt>REM-</dt>
+            <dd style="font-size: 1rem;">REM applies the size decided for the content in the root element of the webpage.</dd>
+            <dt>EM-</dt>
+            <dd style="font-size: 2em;">EM applies the size decided for the content in the parent element of the webpage and multiplying it with value provided.</dd>
+            <dt>VH-</dt>
+            <dd>VH adjusts the size of the content to the Viewport height,i.e., height of the device in which the website is being opened.</dd>
+            <dt>VW-</dt>
+            <dd>VW adjusts the size of the content to the Viewport width,i.e., width of the device in which the website is being opened.</dd>
+            <dt>VMIN-</dt>
+            <dd>VMIN allows you to create responsive elements that adjust their size based on the smaller dimension of the viewport, whether it’s the width or height.</dd>
+            <dt>VMAX-</dt>
+            <dd>VMAX allows you to create responsive elements that adjust their size based on the bigger dimension of the viewport, whether it’s the width or height.</dd>
+        </dl>
+    </p>
+</body>
+</html>

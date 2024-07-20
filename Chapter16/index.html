@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Style Specificity</title>
+    <style>
+        body{
+            border: 2px solid black;
+        }
+        pre{
+            background-color: black;
+            color: white;
+        }
+        .red{
+            color: red;
+        }
+        .yellow{
+            color: yellow;
+        }
+        #green{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Specificity</h1>
+    <p>This is a property of CSS in which if there is multiple styling of same type on one element only, then which one of them should be applied is decided using this.
+    Specificity value:-
+    Inline styling(1000)>ID styling(100)>Class Styling(10)>Element or Attribute styling(1)>Universal Styling(0)
+    For Example:-
+    Below, i am writing a code that will affect a line written within h2 tags, by changing the color attribute of the text. 
+    <pre style="width: 50vw;">
+&lt;h2 class="red white" id="green"&gt;Hello, this is an example sentence.&lt;/h2&gt;</pre>
+    <span style="font-weight: bold;">Output:-</span>
+    <h2 class="red yellow" id="green" style="color: blue;">Hello, this is an example sentence.</h2>
+    Above Statement is in blue color. This is because, even after having multiple color changes from different Classes and IDs, because of inline css that makes the text appear blue as inline css has higher specificity value.
+
+    But here comes the question that how is specificity calculated? It is calculated by browser. Calculation is simple and easily understandable. Whatever styling is applied through any of the above mentioned ways, just assign the points mentioned and whichever is higher, that will be applied. To understand this better let's go back to the example stated above. In that, there is two classes, 1 ID and an inline styling sttached which changes the color inside h2 tags to red and yellow(via classes), green(via ID) and blue by inline styling. Now as per the points system:-
+    <pre style="background-color: white; color: black;">
+red class      - 10
+yellow class   - 10
+green ID       - 100
+Inline styling - 1000</pre>
+    As we see here inline is having the highest points, therefore the styling inside inline was applied to h2.
+
+    So now, Let's go with more complex example:-
+    <pre style="width: 50vw;">
+a.red.green{
+    color: aqua;
+}</pre>
+    Specificity value of the above styling will be:-
+<pre style="background-color: white; color: black;">
+red class      - 10
+green class    - 10
+element "a"    - 1
+total          - 21</pre>
+    
+    So if there will be any other styling that will be higher than 21 that will be applied to the content inside any partcular element, others will be ignored.
+    </p>
+</body>
+</html>

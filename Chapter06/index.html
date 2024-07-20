@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and input tags</title>
+</head>
+<body>
+    <form action="post">
+        <div>
+            <label for="pname">Enter Passenger's Name</label>
+            <input type="text" name="pname" id="" placeholder="Enter the name of passenger" autofocus required>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="male" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="Female" required>
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Insurance" id="Insurance" value="yes">
+            <label for="Insurance">Do you want to opt for travel insurance of Rs. 0.35/person?</label>
+        </div>
+        <div>
+            <label for="Coach">Enter Your preffered coach number</label>
+            <textarea name="Coach" id="Coach" cols="10" rows="1"></textarea>
+        </div>
+        <div>
+            <label for="Berth">Seat Preference</label>
+            <select name="Berth" id="Berth">
+                <option value="Lower">Lower</option>
+                <option value="Side Lower">Side Lower</option>
+                <option value="Middle">Middle</option>
+                <option value="Upper">Upper</option>
+                <option value="Side Upper">Side Upper</option>
+                <option value="No preference">No preference</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input tags</title>
+</head>
+
+<body>
+    <h1>Forms and Input tags</h1>
+    <p>
+        Forms ek aisa tag h jisse ham apne website pe ek form bana sakte hai jisme user apna info daal sakta hai. Input
+        tags forms ka hi part hai jisme aap tarah tarah ke input le sakenge user se from text to check options and all.
+        Inke baare me aap neeche diye gaye example se samajh sakte hai. <br>
+    <h3>Input Tag - Text</h3>
+    <form action="post">
+        <label for="uname">Enter Your Username</label>
+        <input type="text" id="uname" name="Username" placeholder="Enter Your Name" autofocus>
+    </form>
+    <br>
+    agar aap inspect karke dekhenge to aapko dikhega label tag. label tag aapke text ko define karne ke liye use kiya
+    jaata hai. label ke andar jo for attribute hai uska use input tag ki id lene ke liye kiya gaya hai. <br>
+    <h3>Input Tag - Radio Buttons</h3>
+    Inka use kiya jaata hai jab user ko diye gaye options me se koi ek select karna hai. Example - <br>
+    <form action="post">
+
+        <input type="radio" name="gender" id="Male" value="Male" required>
+        <label for="Male">Male</label>
+        <input type="radio" name="gender" id="Female" value="Female" required>
+        <label for="Female">Female</label>
+        <input type="radio" name="gender" id="NoSpec" value="Not Specified" required>
+        <label for="NoSpec">NotSpecified</label>
+    </form>
+    <br>
+    <h3>Input Tag - Checkbox</h3>
+    Checkbox aapne kahi na kahi dekha hua hai as a subscribe newletter, or privacy agreement etc. Example - <br>
+    <form action="post">
+
+        <input type="checkbox" name="subscribe" id="subnews" value="yes">
+        <label for="subnews">Subscribe to Newsletter</label>
+        <br>
+        <input type="checkbox" name="terms" id="termscheck" value="yes" required>
+        <label for="termscheck">Agree with our terms and policies.*</label>
+    </form>
+    <br>
+    <h3>Input Tag - Textarea and Select</h3>
+    Textarea tag ka istemaal user ko likhne ke liye ek text box provide karta hai. ye tab use kiya jata hai jab user se inout jo lena hai wo bohot zyada ho in terms of word count. Basic examples could be a comment section of a video, querry regarding something on any website. Example - <br>
+    <form action="post">
+        <label for="querry"></label>
+        <textarea name="querry" id="querry" rows="5" cols="50" placeholder="Your Querry Here...."></textarea>
+    </form>
+    <br>
+    Select tag ka use app user ko a wide list of options me se ek choose karne dete ho through a drop down option. Example - <br>
+    <form action="post">
+        <label for="option"></label>
+        <select name="opt" id="option" required>
+            <option value="NotSp">Not Specified</option>
+            <option value="Mango">Mango</option>
+            <option value="Banana">Banana</option>
+            <option value="Cherry">Cherry</option>
+        </select>
+    </form>
+    <br>
+    Some other Attributes include required and autofocus. required as the name suggests marks the part of form as required failing which a user could not submit the form. Autofocus is used to readily place the cursor at a text input area of the form which you just saw at the username section.
+    </p>
+</body>
+
+</html>

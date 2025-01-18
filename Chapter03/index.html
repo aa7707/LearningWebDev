@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image, Lists and Tables</title>
+</head>
+<body>
+    <h1>Images</h1>
+    <P>
+        agar hame koi bhi image apne website pe lagani hai to ham uske liye 'img' tag ka use karte hai. is tag ko lagate hi tumko dikhega 2 attriutes 'src' aur 'alt'. src me value dalegi loaction of the image and alt me aap dalenge ek text jooki image ke unavailable hone pe dikhai dega.
+        <br><br><br>
+        <img src="imagephotot.jpg" alt="cocomelon"> <br><br><br>
+        <img src="imagephoto.jpg" alt="cocomelon"><br><br><br>
+        agar aapko image ki height ya width set karna hai to aap wo bhi kar sakte hai width/height ka use karke. usme aap apne hisab se width/ height set kar sakte hai jo ki ek value daali jayegi. default unit height/width ki pixels hai  jo ki agar nahi bhi daali jaaye to bhi acceptable hai.
+    </P>
+    <h1>Tables</h1>
+    <p>
+        Hame agar tables show karni hai website pe to uske liye 'table' tag use karenge. table tag ke andar aate hai 'tr' aur 'td'. tr stands for table row, whereas td stays for table data. tr is used to put in values in a row. tr ke andar aata hai td jisme values dalti hai table ke. agar aapko table head daalna hai to uske liye table ka pehla tr me jo bhi table heading likhna hai usse 'th' ke andar likhe. <br>Example - 
+        <br><br><br>
+        <table style="border: 2px solid black;">
+            <tr style="border: 2px solid black;">
+                <th style="border: 2px solid black;">S.No.</th>
+                <th style="border: 2px solid black;">Name</th>
+                <th style="border: 2px solid black;">Phone</th>
+            </tr>
+            <tr style="border: 2px solid black;">
+                <td style="border: 2px solid black;">1</td>
+                <td style="border: 2px solid black;">Ayush</td>
+                <td style="border: 2px solid black;">99776355</td>
+            </tr>
+            <tr style="border: 2px solid black;">
+                <td style="border: 2px solid black;">2</td>
+                <td style="border: 2px solid black;">Sukomal</td>
+                <td style="border: 2px solid black;">85767983</td>
+            </tr>
+        </table> 
+        <br><br><br>
+        Jaisa ki aapne dekha ki table jo hai uske around borders agaya hai to wo aap style attribute ka use karke kar sakte hai. Border wagera ke baare me ham aage janenge. Tab tak ke liye aap inspect karke dekh sakte hai ki table ki jo styling ki gayi hai wo kaise hui hai.
+        <br>
+        <h3>Colspan and Rowspan</h3>
+        Colspan and rowspan jo hai wo aap tab use kar sakte hai jab aapko kisi ek data ko kuch rows ya kuch columns ki jagah deni hai. example ke taur pe maanlo ki 1 aadmi ka ek hi phone number hai to uske liye aap colspan use karenge, whereas, agar ek aadmi ke paas 2 alag phone numbers hai to aap rowspan use kar sakte hai.
+        <br><br><br>
+        <table style="border: 2px solid black;">
+            <tr style="border: 2px solid black;">
+                <th style="border: 2px solid black;">S.No.</th>
+                <th style="border: 2px solid black;">Name</th>
+                <th style="border: 2px solid black;">Phone</th>
+                <th style="border: 2px solid black;">AltPhone</th>
+            </tr>
+            <tr style="border: 2px solid black;">
+                <td style="border: 2px solid black;">1</td>
+                <td style="border: 2px solid black;" rowspan="2">Ayush</td>
+                <td style="border: 2px solid black;">99776355</td>
+                <td style="border: 2px solid black;">66377335</td>
+            </tr>
+            <tr style="border: 2px solid black;">
+                <td style="border: 2px solid black;">2</td>
+                <td style="border: 2px solid black;">85767983</td>
+                <td style="border: 2px solid black;">48385645</td>
+            </tr>
+            <tr style="border: 2px solid black;">
+                <td style="border: 2px solid black;">3</td>
+                <td style="border: 2px solid black;">Sukomal</td>
+                <td style="border: 2px solid black;" colspan="2">87456233</td>
+            </tr>
+        </table> 
+        <br><br><br>
+        <h3>Captions</h3>
+        Captions jo hai wo table kis baare me hai wo batata hai, basically table ka naam hai.
+        <br><br><br>
+        <table style="border: 2px solid black;">
+            <caption>Employee Details</caption>
+            <tr style="border: 2px solid black;">
+                <th style="border: 2px solid black;">S.No.</th>
+                <th style="border: 2px solid black;">Name</th>
+                <th style="border: 2px solid black;">Phone</th>
+            </tr>
+            <tr style="border: 2px solid black;">
+                <td style="border: 2px solid black;">1</td>
+                <td style="border: 2px solid black;">Ayush</td>
+                <td style="border: 2px solid black;">99776355</td>
+            </tr>
+            <tr style="border: 2px solid black;">
+                <td style="border: 2px solid black;">2</td>
+                <td style="border: 2px solid black;">Sukomal</td>
+                <td style="border: 2px solid black;">85767983</td>
+            </tr>
+        </table> 
+        <br><br><br>
+        <h3>Headers, Footers And Body</h3>
+        Table ke andar bhi header, footer aur body hoti hai, aur wo generaly developer pe hota hai ki wo konsa part table ka kisme daale. isse visually to kuch change nahi aata table me but ye chize organise rakhne me kaafi help aata hai.
+    </p>
+    <h1>Lists</h1>
+    <p>
+    Ye teeen type ke hoti hai, unordered, ordered and Definition list. Lists hame kuch bhi list banane me help karti hai.
+    <br>
+    <h3>Unordered Lists</h3>
+    Ye jo list hoti hai wo generally koi order follow nahi karti. Ise ul tag use karke likha jaata hai. Example - <br>
+    <ul>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Guava</li>
+    </ul>
+    <br>
+    <h3>Ordered Lists</h3>
+    Ye jo list hoti hai wo number wise listed hoti hai. Ise ol tag use karke likha jaata hai. Example - <br>
+    <ol>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Guava</li>
+    </ol>
+    <br>
+    <h3>Definition Lists</h3>
+    Ye jo list hoti hai wo kisi ki jab definition likhni ho tab aap use karte hai. Ise dl tag use karke likha jaata hai. dl tag ke andar aate hai 2 aur tags, dt and dd. dt stands for definition term and dd stands for define definition. Example - <br>
+    <dl>
+        <dt>Apple</dt><dd>A red color fruit.</dd>
+        <dt>Mango</dt><dd>A yellow color fruit also known as King of fruits.</dd>
+    </dl>
+    <br><br><br>
+    Special Note - Agar aapko unordered list and ordered list me change karna hai ki wo list kis way me show ki jaaye to wo aap type attribute ka use karke kar sakte hai. Ye type attribute aapko ul ya ol tag ke saath likhna hoga.
+    <br>Types of Unordered List - Disc, Square, Circle.<br>Types of ordered lists - i,I,A,a,1
+    </p>
+
+</body>
+</html>

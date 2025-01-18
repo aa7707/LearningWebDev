@@ -1,0 +1,1 @@
+I am making this repository as I am learning Web Development from Sigma Web Development course by  Harry sir from CodewithHarry youtube channel. These chapters are what I learnt from each video of the course. This course also contains projects and exercises. 
